@@ -1,0 +1,42 @@
+name = "YAML Simple"
+description = "A simple multi-column starter theme"
+project status url = "http://updates.yaml-fuer-drupal.de/release-history"
+
+; Add theme regions
+regions[help] = Help
+regions[header] = Header
+regions[main_navigation] = Main navigation
+regions[highlighted] = Highlighted
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[content] = Content
+regions[footer] = Footer
+
+; Add stylesheets for all media
+stylesheets[all][] = css/modules/system.menus.css
+stylesheets[all][] = css/modules/system.theme.css
+;stylesheets[all][] = css/modules/yaml.devel.css
+;stylesheets[all][] = css/modules/yaml.lang_dropdown.css
+;stylesheets[all][] = css/modules/yaml.project.css
+;stylesheets[all][] = css/modules/yaml.service_links.css
+;stylesheets[all][] = css/modules/yaml.site_map.css
+;stylesheets[all][] = css/modules/yaml.views.css
+stylesheets[all][] = css/fonts/droidserif.css
+stylesheets[all][] = css/core/base.css
+stylesheets[all][] = css/navigation/hlist-drupal.css
+stylesheets[all][] = css/navigation/vlist-drupal.css
+stylesheets[all][] = css/forms/gray-theme-drupal.css
+;stylesheets[all][] = css/add-ons/microformats/microformats.css
+stylesheets[all][] = css/screen/typography.css
+stylesheets[all][] = css/screen/screen-132-page-layout.css
+stylesheets[all][] = css/screen/screen-dynamic-layout-switching.css
+stylesheets[all][] = css/screen/screen-drupal.css
+stylesheets[all][] = css/print/print.css
+stylesheets[all][] = css/print/print_drupal.css
+; stylesheets[all][] = style.css
+
+version = "7.x-4.0.1.16"
+project = "yaml_simple"
+core = 7.x
+engine = phptemplate
+datestamp = 1339113600

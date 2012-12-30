@@ -1,0 +1,32 @@
+name = "YAML Base"
+description = "A page layout with 3 columns (132)"
+project status url = "http://updates.yaml-fuer-drupal.de/release-history"
+
+; Add theme regions
+regions[help] = Help
+regions[header] = Header
+regions[main_navigation] = Main navigation
+regions[highlighted] = Highlighted
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[content] = Content
+regions[footer] = Footer
+
+settings[yaml_nav_primary] = 0
+settings[yaml_nav_vertical] = 0
+settings[yaml_form_style] = "linear"
+settings[yaml_layout_page_width] = "auto"
+settings[yaml_layout_page_width_min] = "760px"
+settings[yaml_layout_page_width_max] = "80em"
+settings[yaml_layout_page_width_col1] = "25%"
+settings[yaml_layout_page_width_col2] = "auto"
+settings[yaml_layout_page_width_col3] = "25%"
+settings[yaml_layout_page_align] = "center"
+settings[yaml_display_link_license_yaml] = 1
+settings[yaml_display_link_license_yamlfd] = 1
+
+version = "7.x-4.0.1.16"
+project = "yaml"
+core = 7.x
+engine = phptemplate
+datestamp = 1339113600

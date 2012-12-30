@@ -1,0 +1,81 @@
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) Dynamic layout switching
+ *
+ * @copyright       Copyright 2006-2012, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         7.x-4.0.1.16
+ * @lastmodified    2012/03/06
+ */
+
+@media screen {
+
+ /**
+  * @section generic classes for layout switching
+  * @see     http://www.yaml.de/docs/index.html#yaml-columns
+  *
+  * .sidebar-first -> 2-column-layout (using .ym-col1 and .ym-col3)
+  * .sidebar-second -> 2-column-layout (using .ym-col2 and .ym-col3)
+  * .no-sidebars -> single-column-layout (using .ym-col3)
+  */
+
+  .no-sidebars .ym-col3 { margin-left: 0; margin-right: 0; }
+  .no-sidebars .ym-col3 .ym-cbox { padding-left: 10px; padding-right: 10px; }
+
+  .sidebar-first .ym-col3 { margin-left: 25%; margin-right: 0; }
+  .sidebar-first .ym-col3 .ym-cbox { padding-right: 10px; }
+
+  .sidebar-second .ym-col3 { margin-left: 0; margin-right: 25%; }
+  .sidebar-second .ym-col3 .ym-cbox { padding-left: 10px; }
+
+  .no-sidebars .ym-col1, .no-sidebars .ym-col2, .sidebar-first .ym-col2, .sidebar-second .ym-col1 { display:none; }
+}
+
+@media screen and ( max-width: 740px ) {
+
+  .no-sidebars .linearize-level-1 .ym-col3,
+  .sidebar-first .linearize-level-1 .ym-col3,
+  .sidebar-second .linearize-level-1 .ym-col3 {
+    margin: 0;
+  }
+
+  .no-sidebars .linearize-level-1 .ym-col3 .ym-cbox {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sidebar-first .linearize-level-1 .ym-col3 .ym-cbox {
+    padding-right: 0;
+  }
+
+  .sidebar-second .linearize-level-1 .ym-col3 .ym-cbox {
+    padding-left: 0;
+  }
+
+}
+
+@media screen and ( max-width: 480px) {
+
+  .no-sidebars .linearize-level-2 .ym-col3,
+  .sidebar-first .linearize-level-2 .ym-col3,
+  .sidebar-second .linearize-level-2 .ym-col3 {
+    margin: 0;
+  }
+
+  .no-sidebars .linearize-level-2 .ym-col3 .ym-cbox {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sidebar-first .linearize-level-2 .ym-col3 .ym-cbox {
+    padding-right: 0;
+  }
+
+  .sidebar-second .linearize-level-2 .ym-col3 .ym-cbox {
+    padding-left: 0;
+  }
+
+}

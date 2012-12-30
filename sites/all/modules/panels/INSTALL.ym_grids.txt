@@ -1,0 +1,7 @@
+; $Id: INSTALL.ym_grids.txt,v 1.2 2012/02/13 17:00:00 hass Exp $
+
+Install description of YAML for Drupal - Grids Module
+
+1. Rename your sites/all/modules/panels/plugins/layouts directory to
+   sites/all/modules/panels/plugins/layouts.org or delete the entire directory.
+2. Copy the YAML Grid Module layouts directory into sites/all/modules/panels/plugins/layouts.

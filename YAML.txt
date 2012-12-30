@@ -1,0 +1,16 @@
+What is special in this complete package?
+*******************************************************************************
+
+If you uprade to a newer core version you need to apply some core patches to
+your installation. As of Drupal core 7.14 this are the following patches:
+
+- Form element & Form element label theming is broken:
+  http://drupal.org/node/1114398, Patch in comment #41 has been tested.
+
+- drupal_add_js() is missing the 'browsers' option:
+  http://drupal.org/node/865536, Patch in comment #178 has been tested.
+
+Both core patches have been applied to this package. You only need to apply
+them to future core releases, until core has been patched.
+
+Version: 2012/08/26

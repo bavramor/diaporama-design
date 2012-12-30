@@ -1,0 +1,48 @@
+/**
+* "Yet Another Multicolumn Layout" for Drupal
+*
+* (en) Global modification for the print layout
+* (de) Globale-Modifikation für das Druck-Layout
+*
+* @copyright       Copyright 2006-2012, Alexander Hass
+* @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+* @link            http://www.yaml-for-drupal.com
+* @package         yaml-for-drupal
+* @version         7.x-4.0.1.16
+* @lastmodified    2012/03/06
+*/
+
+@media print
+{
+  /**
+   * (en) Layout boxes re-formating
+   * (de) Umformatierung der Layoutboxen
+   */
+  header { padding: 25px 2em 1em 0px; }
+  nav { display: none; }
+
+  /**
+   * (en) Content re-formating
+   * (de) Umformatierung der Inhalte
+   */
+  .pager,
+  .feed-icon,
+  .toolbar-menu,
+  .toolbar-drawer,
+  .tabs,
+  .node .links,
+  .node .picture,
+  .comment .links,
+  .comment .picture,
+  .profile .picture { display: none; }
+
+  /* header a[href]:after,
+  .site-name a[href]:after,
+  .node h2 a[href]:after,
+  .node .info a[href]:after,
+  .node .picture a[href]:after,
+  .comment .title a[href]:after,
+  .comment .author a[href]:after,
+  .comment .picture a[href]:after { content: ""; } */
+
+}

@@ -1,0 +1,243 @@
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) Screen layout customizations for Drupal.
+ *
+ * @copyright       Copyright 2006-2012, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         7.x-4.0.1.16
+ * @lastmodified    2012/03/06
+ */
+
+@media screen {
+
+  .term-listing-heading,
+  .front .node-teaser,
+  .not-front .node-teaser {
+    border-bottom: 1px solid #222;
+    margin-bottom: 15px;
+    padding-bottom: 1.125em;
+  }
+
+  /* @todo: Topnav, Tags, etc. */
+  ul.inline {
+    margin: 0;
+  }
+  ul.inline li {
+    margin: 0;
+    padding: 0 0.2em;
+  }
+  ul.inline li.field-label {
+    padding-left: 0; /* RTL */
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    display: block;
+
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    line-height: 1em;
+
+    border-bottom: 1px solid #222;
+    padding-bottom: 0.2em;
+  }
+  .breadcrumb span {
+    margin: 0;
+    padding: 0.5em 1.5em;
+    display: inline;
+    float: left;
+  }
+  .breadcrumb span a {
+    padding: 0 0.5em;
+  }
+  .breadcrumb span a:hover {
+    background: transparent;
+  }
+
+  /* Feed icon */
+  .feed-icon img {
+    margin-top: 1.5em;
+  }
+
+  /**
+  * BUG #1478484: Dirty date/calendar module workaround.
+  * Buttons overlap; if German translation has been enabled.
+  */
+  .view .date-nav-wrapper .date-prev {
+    right: 85px;
+  }
+
+  /* --------------- System Tabs  --------------- */
+  
+  .tabs {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+  .tabs ul.primary {
+    padding: 0 3px;
+    margin: 0;
+    overflow: hidden;
+    border: none;
+    background: transparent url(../navigation/images/tabs/tabs-border.png) repeat-x left bottom;
+  }
+  .tabs ul.primary li {
+    display: block;
+    float: left; /* LTR */
+    vertical-align: bottom;
+    margin: 0 5px 0 0; /* LTR */
+  }
+  .tabs ul.primary li.active a {
+    border-bottom: 1px solid #ffffff;
+  }
+  .tabs ul.primary li a {
+    color: #000;
+    background-color: #ededed;
+    height: 1.8em;
+    line-height: 1.9;
+    display: block;
+    font-size: 0.929em;
+    float: left; /* not LTR */
+    padding: 0 10px 3px;
+    margin: 0;
+    text-shadow: 0 1px 0 #fff;
+    -khtml-border-radius-topleft: 6px;
+    -moz-border-radius-topleft: 6px;
+    -webkit-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    -khtml-border-radius-topright: 6px;
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .tabs ul.primary li.active a {
+    background-color: #ffffff;
+  }
+  .tabs ul.secondary {
+    border-bottom: none;
+    padding: 0.5em 0;
+  }
+  .tabs ul.secondary li {
+    display: block;
+    float: left; /* LTR */
+  }
+  .tabs ul.secondary li:last-child {
+    border-right: none; /* LTR */
+  }
+  .tabs ul.secondary li:first-child {
+    padding-left: 0; /* LTR */
+  }
+  .tabs ul.secondary li a {
+    padding: 0.25em 0.5em;
+  }
+  .tabs ul.secondary li a.active {
+    background: #f2f2f2;
+    border-bottom: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  ul.action-links {
+    list-style: none;
+    margin: 5px;
+    padding: 0.5em 1em;
+  }
+  ul.action-links li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  ul.action-links li a {
+    padding-left: 15px;
+    background: url(../modules/images/add.png) no-repeat left center;
+    margin: 0 10px 0 0;
+  }
+
+  /* -------------- Form Elements   ------------- */
+  
+  fieldset {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    margin-bottom: 32px;
+    padding: 0 0 10px;
+    position: relative;
+    top: 12px; /* Offsets the negative margin of legends */
+    -khtml-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+  /* @todo: troubles unter /search/node, fieldset nicht sichtbar!!!
+  
+   fieldset.collapsed {
+    background: transparent;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+  fieldset legend {
+    background: #dbdbdb;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    color: #3b3b3b;
+    display: block;
+    height: 2em;
+    left: -1px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    line-height: 2;
+    padding: 0;
+    position: absolute;
+    text-indent: 10px;
+    text-shadow: 0 1px 0 #fff;
+    top: -12px;
+    width: 100%;
+    -khtml-border-radius-topleft: 4px;
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -khtml-border-radius-topright: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+  } */
+  
+  fieldset.collapsed legend {
+    -khtml-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+  fieldset legend a {
+    color: #3b3b3b;
+  }
+  fieldset legend a:hover,
+  fieldset legend a:focus,
+  fieldset legend a:active {
+    color: #000;
+  }
+  fieldset .fieldset-wrapper {
+    padding: 0 10px;
+  }
+  fieldset .fieldset-description {
+    margin-top: 5px;
+    margin-bottom: 1em;
+    line-height: 1.4;
+    color: #3c3c3c;
+    font-style: italic;
+  }
+
+  /**
+  * Contextual links overlay the language switcher flags from locale module.
+  * Move the dropdown button above the inline flags.
+  */
+  #block-locale-language div.contextual-links-wrapper {
+    top: -20px;
+  }
+
+}

@@ -1,0 +1,72 @@
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) Modification of Wysiwyg API style for the YAML for Drupal layout.
+ * (de) Modifikation des Wysiwyg API Style für das YAML für Drupal Layout.
+ *
+ * @copyright       Copyright 2006-2012, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         7.x-4.0.1.16
+ * @lastmodified    2012/08/06
+ *
+ * NOTE: The editor need to be configured with:
+ *   - CSS file "%tcss/modules/_wysiwyg_editor_content.css"
+ *   - JS file "%tckeditor.styles.js"
+ */
+
+/**
+ * Load all theme files that style content. 
+ */
+@import url(../core/base.min.css);
+@import url(system.menus.css);
+@import url(system.theme.css);
+@import url(../add-ons/microformats/microformats.css);
+@import url(../screen/typography.css);
+
+body {
+  background: #fff;
+  padding: 2px;
+  margin: 0;
+  border: 0;
+}
+body .ym-grid .ym-gbox,
+body .ym-grid .ym-gl,
+body .ym-grid .ym-gr {
+  border: 1px dashed #ccc; /* Grid with border in editor */
+}
+
+/**
+ * Make scripts visible.
+ */
+body script {
+  display: block;
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  background: url(../../images/icons/script.gif) no-repeat;
+}
+
+/**
+ * Make containing floats visible.
+ */
+.ym-contain-dt,
+.ym-contain-oh,
+.ym-contain-fl {
+  background: url(../../images/icons/ym-contain.gif);
+  border: 1px dotted #ccc;
+}
+
+/**
+ * Customize editor look and feel of individual items.
+ */
+.float-left {}
+.float-right {}
+.center {}
+.dimmed {}
+.highlight {}
+.info {}
+.important {}
+.note {}
+.warning {}
